@@ -1,0 +1,46 @@
+<indexdiv>
+<indexdiv><title>C</title>
+<indexentry><primaryie linkends="CORBA-free"><link linkend="CORBA-free">CORBA_free</link></primaryie></indexentry>
+<indexentry><primaryie linkends="CORBA-sequence-get-release"><link linkend="CORBA-sequence-get-release">CORBA_sequence_get_release</link></primaryie></indexentry>
+<indexentry><primaryie linkends="CORBA-sequence-set-release"><link linkend="CORBA-sequence-set-release">CORBA_sequence_set_release</link></primaryie></indexentry>
+</indexdiv>
+<indexdiv><title>O</title>
+<indexentry><primaryie linkends="ORBitAsyncInvokeFunc"><link linkend="ORBitAsyncInvokeFunc">ORBitAsyncInvokeFunc</link></primaryie></indexentry>
+<indexentry><primaryie linkends="ORBitAsyncQueueEntry"><link linkend="ORBitAsyncQueueEntry">ORBitAsyncQueueEntry</link></primaryie></indexentry>
+<indexentry><primaryie linkends="ORBitConnection"><link linkend="ORBitConnection">ORBitConnection</link></primaryie></indexentry>
+<indexentry><primaryie linkends="ORBitConnectionStatus"><link linkend="ORBitConnectionStatus">ORBitConnectionStatus</link></primaryie></indexentry>
+<indexentry><primaryie linkends="ORBit-alloc-tcval"><link linkend="ORBit-alloc-tcval">ORBit_alloc_tcval</link></primaryie></indexentry>
+<indexentry><primaryie linkends="ORBit-connection-set-max-buffer"><link linkend="ORBit-connection-set-max-buffer">ORBit_connection_set_max_buffer</link></primaryie></indexentry>
+<indexentry><primaryie linkends="ORBit-get-safe-tmp"><link linkend="ORBit-get-safe-tmp">ORBit_get_safe_tmp</link></primaryie></indexentry>
+<indexentry><primaryie linkends="ORBit-IModule"><link linkend="ORBit-IModule">ORBit_IModule</link></primaryie></indexentry>
+<indexentry><primaryie linkends="ORBit-realloc-tcval"><link linkend="ORBit-realloc-tcval">ORBit_realloc_tcval</link></primaryie></indexentry>
+<indexentry><primaryie linkends="ORBit-sequence-alloc"><link linkend="ORBit-sequence-alloc">ORBit_sequence_alloc</link></primaryie></indexentry>
+<indexentry><primaryie linkends="ORBit-sequence-append"><link linkend="ORBit-sequence-append">ORBit_sequence_append</link></primaryie></indexentry>
+<indexentry><primaryie linkends="ORBit-sequence-concat"><link linkend="ORBit-sequence-concat">ORBit_sequence_concat</link></primaryie></indexentry>
+<indexentry><primaryie linkends="ORBit-sequence-index"><link linkend="ORBit-sequence-index">ORBit_sequence_index</link></primaryie></indexentry>
+<indexentry><primaryie linkends="ORBit-sequence-set-size"><link linkend="ORBit-sequence-set-size">ORBit_sequence_set_size</link></primaryie></indexentry>
+<indexentry><primaryie linkends="ORBit-small-alloc"><link linkend="ORBit-small-alloc">ORBit_small_alloc</link></primaryie></indexentry>
+<indexentry><primaryie linkends="ORBit-small-allocbuf"><link linkend="ORBit-small-allocbuf">ORBit_small_allocbuf</link></primaryie></indexentry>
+<indexentry><primaryie linkends="ORBit-small-connection-unref"><link linkend="ORBit-small-connection-unref">ORBit_small_connection_unref</link></primaryie></indexentry>
+<indexentry><primaryie linkends="ORBit-small-demarshal-async"><link linkend="ORBit-small-demarshal-async">ORBit_small_demarshal_async</link></primaryie></indexentry>
+<indexentry><primaryie linkends="ORBIT-SMALL-FAST-LOCALS--CAPS"><link linkend="ORBIT-SMALL-FAST-LOCALS--CAPS">ORBIT_SMALL_FAST_LOCALS</link></primaryie></indexentry>
+<indexentry><primaryie linkends="ORBit-small-flags"><link linkend="ORBit-small-flags">ORBit_small_flags</link></primaryie></indexentry>
+<indexentry><primaryie linkends="ORBIT-SMALL-FORCE-GENERIC-MARSHAL--CAPS"><link linkend="ORBIT-SMALL-FORCE-GENERIC-MARSHAL--CAPS">ORBIT_SMALL_FORCE_GENERIC_MARSHAL</link></primaryie></indexentry>
+<indexentry><primaryie linkends="ORBit-small-freekids"><link linkend="ORBit-small-freekids">ORBit_small_freekids</link></primaryie></indexentry>
+<indexentry><primaryie linkends="ORBit-small-get-connection"><link linkend="ORBit-small-get-connection">ORBit_small_get_connection</link></primaryie></indexentry>
+<indexentry><primaryie linkends="ORBit-small-get-connection-ref"><link linkend="ORBit-small-get-connection-ref">ORBit_small_get_connection_ref</link></primaryie></indexentry>
+<indexentry><primaryie linkends="ORBit-small-get-connection-status"><link linkend="ORBit-small-get-connection-status">ORBit_small_get_connection_status</link></primaryie></indexentry>
+<indexentry><primaryie linkends="ORBit-small-get-iinterface"><link linkend="ORBit-small-get-iinterface">ORBit_small_get_iinterface</link></primaryie></indexentry>
+<indexentry><primaryie linkends="ORBit-small-get-iinterfaces"><link linkend="ORBit-small-get-iinterfaces">ORBit_small_get_iinterfaces</link></primaryie></indexentry>
+<indexentry><primaryie linkends="ORBit-small-get-servant"><link linkend="ORBit-small-get-servant">ORBit_small_get_servant</link></primaryie></indexentry>
+<indexentry><primaryie linkends="ORBit-small-get-types"><link linkend="ORBit-small-get-types">ORBit_small_get_types</link></primaryie></indexentry>
+<indexentry><primaryie linkends="ORBit-small-get-type-id"><link linkend="ORBit-small-get-type-id">ORBit_small_get_type_id</link></primaryie></indexentry>
+<indexentry><primaryie linkends="ORBit-small-invoke-async"><link linkend="ORBit-small-invoke-async">ORBit_small_invoke_async</link></primaryie></indexentry>
+<indexentry><primaryie linkends="ORBit-small-invoke-stub"><link linkend="ORBit-small-invoke-stub">ORBit_small_invoke_stub</link></primaryie></indexentry>
+<indexentry><primaryie linkends="ORBit-small-invoke-stub-n"><link linkend="ORBit-small-invoke-stub-n">ORBit_small_invoke_stub_n</link></primaryie></indexentry>
+<indexentry><primaryie linkends="ORBit-small-listen-for-broken"><link linkend="ORBit-small-listen-for-broken">ORBit_small_listen_for_broken</link></primaryie></indexentry>
+<indexentry><primaryie linkends="ORBit-small-load-typelib"><link linkend="ORBit-small-load-typelib">ORBit_small_load_typelib</link></primaryie></indexentry>
+<indexentry><primaryie linkends="ORBit-small-unlisten-for-broken"><link linkend="ORBit-small-unlisten-for-broken">ORBit_small_unlisten_for_broken</link></primaryie></indexentry>
+<indexentry><primaryie linkends="ORBit-small-unlisten-for-broken-full"><link linkend="ORBit-small-unlisten-for-broken-full">ORBit_small_unlisten_for_broken_full</link></primaryie></indexentry>
+</indexdiv>
+</indexdiv>
