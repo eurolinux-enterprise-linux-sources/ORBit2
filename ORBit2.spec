@@ -4,7 +4,7 @@
 Summary: A high-performance CORBA Object Request Broker
 Name: ORBit2
 Version: 2.14.17
-Release: 5%{?dist}
+Release: 6%{?dist}
 Source: http://download.gnome.org/sources/ORBit2/2.14/%{name}-%{version}.tar.bz2
 Group: System Environment/Daemons
 License: LGPLv2+ and GPLv2+
@@ -110,6 +110,17 @@ cat >$RPM_BUILD_ROOT%{_includedir}/orbit-2.0/orbit/orbit-config.h <<EOF
 #endif
 EOF
 
+mkdir -p $RPM_BUILD_ROOT%{_sysconfdir}/xdg/autostart/
+cat >$RPM_BUILD_ROOT%{_sysconfdir}/xdg/autostart/linc-cleanup-sockets.desktop <<EOF
+[Desktop Entry]
+Type=Application
+Name=ORBit Socket Housekeeping
+Exec=/usr/bin/linc-cleanup-sockets
+NoDisplay=true
+StartupNotify=false
+EOF
+
+
 %post -p /sbin/ldconfig
 
 %postun -p /sbin/ldconfig
@@ -122,6 +133,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS COPYING README TODO
 %{_libdir}/*.so.*
 %dir %{_libdir}/orbit-2.0
+%{_sysconfdir}/xdg/autostart/*.desktop
 %{_libdir}/orbit-2.0/*.so*
 
 %files devel
@@ -142,6 +154,10 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/gtk-doc/html/*
 
 %changelog
+* Wed Nov 02 2016 Ray Strode <rstrode@redhat.com> - 2.14.17-6
+- Automatically clean up stale sockets at startup
+  Resolves: #1258459
+
 * Fri Jun 20 2014 Ray Strode <rstrode@redhat.com> 2.14.17-5
 - Fix crash on X server dying
   Related: #784223
