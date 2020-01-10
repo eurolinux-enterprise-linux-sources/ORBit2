@@ -4,7 +4,7 @@
 Summary: A high-performance CORBA Object Request Broker
 Name: ORBit2
 Version: 2.14.17
-Release: 3.2%{?dist}
+Release: 5%{?dist}
 Source: http://download.gnome.org/sources/ORBit2/2.14/%{name}-%{version}.tar.bz2
 Group: System Environment/Daemons
 License: LGPLv2+ and GPLv2+
@@ -22,6 +22,7 @@ Patch0: ORBit2-2.14.3-multilib.patch
 # handle ref leaks in the a11y stack more gracefully
 Patch1: ORBit2-2.14.3-ref-leaks.patch
 Patch2: ORBit2-2.14-retry-eagain.patch
+Patch3: fix-crash-on-exit.patch
 
 %description
 ORBit is a high-performance CORBA (Common Object Request Broker
@@ -64,6 +65,7 @@ write such programs, you'll also need to install the ORBIT package.
 %patch0 -p1 -b .multilib
 %patch1 -p1 -b .ref-leaks
 %patch2 -p1 -b .eagain
+%patch3 -p1 -b .fix-crash-on-exit
 
 %build
 ## the shipped libtool is broken wrt. multilib
@@ -140,6 +142,14 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/gtk-doc/html/*
 
 %changelog
+* Fri Jun 20 2014 Ray Strode <rstrode@redhat.com> 2.14.17-5
+- Fix crash on X server dying
+  Related: #784223
+
+* Wed Jun 18 2014 Ray Strode <rstrode@redhat.com> 2.14.17-4
+- Fix crash on exit
+  Resolves: #784223
+
 * Mon Oct 15 2012 Dan Winship <danw@redhat.com> - 2.14.17-3.2
 - Retry connect() when it gets EAGAIN on heavily-loaded systems (rh #857016)
 
