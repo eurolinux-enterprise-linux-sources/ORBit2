@@ -4,7 +4,7 @@
 Summary: A high-performance CORBA Object Request Broker
 Name: ORBit2
 Version: 2.14.17
-Release: 6%{?dist}
+Release: 7%{?dist}
 Source: http://download.gnome.org/sources/ORBit2/2.14/%{name}-%{version}.tar.bz2
 Group: System Environment/Daemons
 License: LGPLv2+ and GPLv2+
@@ -135,6 +135,7 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_libdir}/orbit-2.0
 %{_sysconfdir}/xdg/autostart/*.desktop
 %{_libdir}/orbit-2.0/*.so*
+%{_bindir}/linc-cleanup-sockets
 
 %files devel
 %defattr(-,root,root,-)
@@ -150,10 +151,15 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/aclocal/*
 %dir %{_datadir}/idl
 %{_datadir}/idl/orbit-2.0
-%{_bindir}/linc-cleanup-sockets
 %{_datadir}/gtk-doc/html/*
 
 %changelog
+* Mon Dec 18 2017 Ray Strode <rstrode@redhat.com> - 2.14.17-7
+- Move linc-cleanup-sockets to main package, so users
+  don't need to install ORBit2-devel to get fix for #1258459
+  Resolves: #1499272
+  Related: 1258459
+
 * Wed Nov 02 2016 Ray Strode <rstrode@redhat.com> - 2.14.17-6
 - Automatically clean up stale sockets at startup
   Resolves: #1258459
